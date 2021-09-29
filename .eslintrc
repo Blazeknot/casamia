@@ -1,0 +1,76 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "globals": {
+    "defineProps": "readonly",
+    "defineEmits": "readonly",
+    "defineExpose": "readonly",
+    "withDefaults": "readonly"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    // override/add rules settings here, such as:
+    "prettier/prettier": "error",
+    "arrow-parens": ["error", "always"],
+    // "comma-dangle": ["error", "never"],
+    "curly": ["error", "all"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-debugger": "error",
+    "no-console": "error",
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single"],
+    // "semi": ["error", "never"],
+    "vue/order-in-components": [
+      "error",
+      {
+        "order": [
+          "el",
+          "name",
+          "parent",
+          "functional",
+          ["delimiters", "comments"],
+          ["components", "directives", "filters"],
+          "extends",
+          "mixins",
+          "inheritAttrs",
+          ["props", "propsData"],
+          "model",
+          "fetch",
+          "asyncData",
+          "data",
+          "computed",
+          "watch",
+          "LIFECYCLE_HOOKS",
+          "methods",
+          "head",
+          ["template", "render"],
+          "renderError"
+        ]
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 20,
+        "multiline": { "max": 1, "allowFirstLine": false }
+      }
+    ]
+  }
+}
