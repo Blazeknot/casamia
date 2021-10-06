@@ -1,7 +1,7 @@
 # Casamia
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![GitHub contributors](https://badgen.net/github/contributors/Blazeknot/casamia)](https://GitHub.com/Blazeknot/casamia/graphs/contributors/)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg?style=flat)]()
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/Blazeknot/casamia.svg)](https://GitHub.com/Blazeknot/casamia/pull/)
 [![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]()
 ![main workflow](https://github.com/Blazeknot/casamia/actions/workflows/main.yml/badge.svg)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)

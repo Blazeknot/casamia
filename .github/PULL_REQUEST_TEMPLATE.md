@@ -28,7 +28,7 @@ These changes:
 
 [//]: # (Please describe the tests that you ran to verify your changes. Provide all additional information necessary to aid in QAing these changes. Please also list any relevant details for your test configuration. You may put "N/A" if this section is not applicable.)
 
-- [ ] Hijack <email or hijack url> and navigate to <url>
+- [ ] Go to Netlify preview URL
 
 ## Firebase-specific
 

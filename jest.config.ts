@@ -9,18 +9,20 @@ module.exports = {
   collectCoverageFrom: [
     '**/*.{js,ts,vue}',
     '!**/node_modules/**',
+    '!**/src/main.ts',
     '!**/src/stories/**',
     '!**/src/router/**',
-    '!**/src/main.ts'
+    '!**/src/firebase/*',
+    '!**/src/store/*'
   ],
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: -10
-    }
-  },
+  // coverageThreshold: {
+  //   global: {
+  //     branches: 80,
+  //     functions: 80,
+  //     lines: 80,
+  //     statements: -10
+  //   }
+  // },
   globals: {
     'ts-jest': {
       tsconfig: {
