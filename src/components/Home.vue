@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
+import { useStore } from 'vuex'
 
 const count = ref(0)
+const store = useStore()
+const todos = computed(() => store.state.todos)
+
+store.dispatch('loadTodos')
 </script>
 
 <template>
@@ -11,8 +16,14 @@ const count = ref(0)
     type="button"
     @click="count++"
   >
-    count iss: {{ count }}
+    count is: {{ count }}
   </button>
+  <br /><br />
+  <ul>
+    <li v-for="todo in todos" :key="todo.value">
+      {{ todo.value }}
+    </li>
+  </ul>
   <br />
   <router-link to="/about">Take me to About</router-link>
 </template>
